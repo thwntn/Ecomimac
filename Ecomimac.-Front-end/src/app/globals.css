@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff;
+  --background-block-color: #ffffff;
+  --text-color: #11161f;
+}
+
+@font-face {
+  font-family: Define;
+  src: url(/asset/font/bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Define;
+  src: url(/asset/font/regular.ttf);
+}
+
+@font-face {
+  font-family: Medium;
+  src: url(/asset/font/medium.ttf);
+}
+
+* {
+  font-family: Define;
+  scroll-behavior: smooth;
+  font-optical-sizing: auto;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+html body {
+  background-color: var(--background);
+  color: var(--text-color);
+
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #f8f8fa inset;
+  -webkit-text-fill-color: #000000;
+}
+
+input::-webkit-file-upload-button {
+  visibility: hidden;
+}

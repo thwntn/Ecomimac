@@ -1,0 +1,53 @@
+@use "../../common/index.module.scss" as common;
+
+.frame {
+  display: flex;
+  user-select: none;
+
+  padding-bottom: 16px;
+
+  .selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+    user-select: none;
+    font-weight: bold;
+
+    width: 100%;
+    padding: 0px 12px;
+  }
+
+  .withSelect {
+    font-weight: bold;
+  }
+
+  .column {
+    display: grid;
+    gap: 1rem;
+    padding-left: 12px;
+    flex: 1;
+    gap: 16px;
+    font-weight: bold;
+
+    .underline {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .checkbox {
+    padding: 0px 8px 0px 0px;
+  }
+
+  .centerRight {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.action {
+  width: 120px;
+}

@@ -1,0 +1,29 @@
+@use "../common/index.module.scss" as common;
+
+.frame {
+  display: flex;
+  padding: 2px;
+  border-radius: 4px;
+  width: fit-content;
+  box-shadow: common.$shadow;
+  background: #fff;
+  width: 100%;
+
+  .item {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    align-items: center;
+    padding: 0px 24px;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 38px;
+    white-space: nowrap;
+  }
+
+  .active {
+    background-color: #f8f8f8;
+    color: #000000;
+  }
+}

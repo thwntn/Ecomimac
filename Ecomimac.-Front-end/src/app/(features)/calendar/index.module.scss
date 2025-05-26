@@ -1,0 +1,122 @@
+@use "../../(components)/common/index.module.scss" as common;
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+}
+
+.wrapper {
+  z-index: 20;
+  flex-direction: column;
+  width: 100%;
+  background-color: common.$background-color;
+  box-shadow: common.$shadow;
+  top: 100%;
+  border-radius: 8px;
+  animation: account 0.32s ease;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button {
+  border-radius: 9999px;
+  border-width: 1px;
+  box-shadow: common.$shadow;
+  padding: 4px;
+}
+
+.icon {
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.element {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.item {
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  aspect-ratio: 2/1;
+  border: 1px dashed #0000000f;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 40px;
+  border-radius: 9999px;
+}
+
+.content:hover {
+  border: 1px solid #acb9c6;
+  box-shadow: common.$shadow;
+  transition-delay: 0.16s;
+}
+
+.label {
+  font-size: 10px;
+  width: 100%;
+  padding: 4px 8px;
+  height: 24px;
+  color: common.$input-label-color;
+}
+
+.title {
+  text-align: center;
+  font-size: 10px;
+  padding: 24px 0px;
+}
+
+.view {
+  border: 1px solid transparent;
+  background: common.$input-background;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 48px;
+
+  &:hover,
+  &:focus-within {
+    border: 1px solid common.$input-border-hover;
+  }
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px;
+  height: 24px;
+  width: 100%;
+  gap: 4px;
+}
+
+@keyframes account {
+  from {
+    transform: scale(95%) translateY(-6px);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}

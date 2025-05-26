@@ -1,0 +1,44 @@
+[
+  {
+    "enum": 0,
+    "name": "Bản nháp",
+    "description": "Chiến dịch chưa được gửi, đang trong quá trình soạn thảo và kiểm tra qua dịch vụ gửi tin.",
+    "color": "#787878",
+    "backgroundColor": "#e3e3e3"
+  },
+  {
+    "enum": 1,
+    "name": "Đang gửi tin",
+    "description": "Tin nhắn đang được gửi tới người dùng thông qua các kênh gửi tin.",
+    "color": "#333333",
+    "backgroundColor": "#e3e3e3"
+  },
+  {
+    "enum": 2,
+    "name": "Kết thức",
+    "description": "Chiến dịch đã hoàn tất, tin nhắn đã được gửi thành công tới người dùng qua kênh gửi tin.",
+    "color": "#0ec77f",
+    "backgroundColor": "#d1ffed"
+  },
+  {
+    "enum": 3,
+    "name": "Đã huỷ",
+    "description": "Chiến dịch đã bị huỷ, tin nhắn không được gửi tới người dùng qua kênh gửi tin.",
+    "color": "#ff5733",
+    "backgroundColor": "#ffcccc"
+  },
+  {
+    "enum": 4,
+    "name": "Chờ hệ thống xử lý",
+    "description": "Chiến dịch đang chờ xử lý bởi hệ thống, chưa được gửi đi qua kênh gửi tin.",
+    "color": "#ff9800",
+    "backgroundColor": "#fff3e0"
+  },
+  {
+    "enum": 5,
+    "name": "Đang trong hàng đợi",
+    "description": "Chiến dịch đang trong hàng đợi và sẽ được gửi tới người dùng qua kênh gửi tin khi đến lượt.",
+    "color": "#ff6600",
+    "backgroundColor": "#ffd699"
+  }
+]

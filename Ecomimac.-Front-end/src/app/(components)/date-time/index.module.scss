@@ -1,0 +1,12 @@
+@use "../common/index.module.scss" as common;
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  font-size: common.$default-size;
+
+  .description {
+    color: #9ca3af;
+    font-size: common.$small-size;
+  }
+}

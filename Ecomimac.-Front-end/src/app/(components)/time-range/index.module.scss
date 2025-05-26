@@ -1,0 +1,9 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+
+  .description {
+    color: #9ca3af;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.frame {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  gap: 2px;
+  color: #656565;
+
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+
+    .icon {
+      animation: 0.32s account ease forwards;
+    }
+  }
+
+  .title {
+    text-decoration: underline;
+  }
+}
+
+@keyframes account {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}

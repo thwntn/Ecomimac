@@ -1,0 +1,42 @@
+@use "../common/index.module.scss" as common;
+
+.frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+
+  .wrapper {
+    border-radius: common.$border-radius;
+    box-shadow: common.$shadow;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .action {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 100%;
+
+    background-color: #7c7c7c38;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #00000060;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    gap: 8px;
+
+    position: absolute;
+    width: fit-content;
+
+    right: 16px;
+    top: 16px;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../common/index.module.scss" as common;
+
+.frame {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .dot {
+    padding: 6px;
+    width: fit-content;
+    border-radius: 100px;
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 100px;
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    white-space: nowrap;
+    font-family: Medium;
+
+    border-radius: 999px;
+    font-size: common.$default-size;
+  }
+}

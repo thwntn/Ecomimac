@@ -1,0 +1,119 @@
+@use "../common/index.module.scss" as common;
+
+$padding-wrapper: 24px;
+$blur: 16px;
+$background-action: #fafafa;
+$move: 48px;
+
+.frame {
+  display: flex;
+  overflow: auto;
+  position: fixed;
+
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+
+  padding: 8px;
+  justify-content: end;
+  backdrop-filter: blur(4px);
+  background-color: #00000033;
+
+  animation: opacity 220ms ease forwards;
+
+  .wrapper {
+    flex-direction: column;
+    height: fit-content;
+    display: flex;
+
+    border-radius: calc(common.$border-radius);
+    gap: $padding-wrapper;
+
+    background-color: #ffffff;
+    backdrop-filter: blur($blur);
+
+    opacity: 0;
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: common.$border-radius common.$border-radius 0 0;
+
+      background-color: $background-action;
+      padding: calc($padding-wrapper - 4px) $padding-wrapper;
+
+      .name {
+        font-weight: bold;
+        font-size: common.$large-size;
+      }
+    }
+
+    .trigger {
+      width: fit-content;
+    }
+
+    .loading {
+      height: 156px;
+    }
+
+    .element {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .isForm {
+      padding: 0px $padding-wrapper;
+    }
+
+    .action {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+
+      padding: $padding-wrapper;
+      background-color: $background-action;
+      border-radius: 0 0 common.$border-radius common.$border-radius;
+    }
+  }
+}
+
+.in {
+  animation: animation-in 320ms ease forwards;
+}
+.out {
+  animation: animation-out 220ms ease forwards;
+}
+
+@keyframes animation-in {
+  from {
+    opacity: 0.85;
+    transform: translateX($move);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animation-out {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX($move);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

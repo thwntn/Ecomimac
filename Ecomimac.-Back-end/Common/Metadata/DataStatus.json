@@ -1,0 +1,23 @@
+[
+  {
+    "enum": 0,
+    "name": "Đang xử lý",
+    "description": "Gửi tin đến hộp thư điện tử sử dụng thông qua dịch vụ MailGun",
+    "color": "#118d57",
+    "backgroundColor": "#cfe8dd"
+  },
+  {
+    "enum": 1,
+    "name": "Khởi tạo",
+    "description": "Gửi tin đến người dùng thông qua Telegram Bot/Telegram Channel",
+    "color": "#454f5b",
+    "backgroundColor": "#d9dbde"
+  },
+  {
+    "enum": 2,
+    "name": "Hoàn tất",
+    "description": "Gửi tin đến người dùng Zalo thông qua OAÏ",
+    "color": "#359eff",
+    "backgroundColor": "#2c6bff13"
+  }
+]

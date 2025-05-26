@@ -1,0 +1,55 @@
+$background: linear-gradient(90deg, #0000000f, #ffffff68, #00000010);
+
+.main {
+  background-color: #0000000a;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  div {
+    animation: account 4s ease infinite;
+    background-size: 300%;
+    border-radius: 6px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .first {
+      background-image: $background;
+      width: 20%;
+      height: 24px;
+    }
+
+    .second {
+      background-image: $background;
+      width: 80%;
+      height: 48px;
+    }
+
+    .third {
+      background-image: $background;
+      width: 64%;
+      height: 24px;
+    }
+  }
+}
+
+@keyframes account {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

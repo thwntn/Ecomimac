@@ -1,0 +1,26 @@
+[
+  {
+    "enum": 0,
+    "name": "Email",
+    "icon": "media/static/Email.webp",
+    "description": "Gửi tin đến hộp thư điện tử sử dụng thông qua dịch vụ MailGun"
+  },
+  {
+    "enum": 1,
+    "name": "Telegram",
+    "icon": "media/static/Telegram.png",
+    "description": "Gửi tin đến người dùng thông qua Telegram Bot/Telegram Channel"
+  },
+  {
+    "enum": 2,
+    "name": "Zalo",
+    "icon": "media/static/Zalo.png",
+    "description": "Gửi tin đến người dùng Zalo thông qua OA"
+  },
+  {
+    "enum": 3,
+    "name": "Tin nhắn",
+    "icon": "media/static/SMS.png",
+    "description": "Gửi tin đến người dùng SMS thông qua Inforbip"
+  }
+]

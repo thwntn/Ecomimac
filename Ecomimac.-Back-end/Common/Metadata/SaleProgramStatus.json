@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Chưa kích hoạt",
+    "key": 0,
+    "color": "#454f5b",
+    "description": "Hoá đơn mẫu, không sử dụng, hoá đơn không chính thức",
+    "backgroundColor": "#d9dbde",
+    "icon": "icon/invoice-status-draft.svg"
+  },
+  {
+    "title": "Đang hoạt động",
+    "key": 1,
+    "color": "#359eff",
+    "description": "Hoá đơn chính thức, đang trong quá trình xác thực hoặc chuyển đổi",
+    "backgroundColor": "#2c6bff13",
+    "icon": "icon/invoice-status-active.svg"
+  },
+  {
+    "title": "Hết hạn",
+    "key": 2,
+    "color": "#ff1100",
+    "description": "Hoá đơn chính thức, chưa thanh toán",
+    "backgroundColor": "#ffe5e3",
+    "icon": "icon/invoice-status-done.svg"
+  }
+]

@@ -1,0 +1,41 @@
+.frame {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  bottom: 24px;
+  right: 24px;
+  z-index: 30;
+  gap: 16px;
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    width: fit-content;
+    background: white;
+
+    box-shadow: rgba(164, 176, 187, 0.2) 0px 0px 2px 0px,
+      rgba(188, 198, 209, 0.12) 0px 12px 24px -4px;
+
+    border-radius: 8px;
+    animation: showSnackbar 0.32s ease;
+
+    .close {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes showSnackbar {
+  from {
+    transform: scale(95%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}

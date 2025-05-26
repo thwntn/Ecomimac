@@ -1,0 +1,107 @@
+@use "../../(components)/common/index.module.scss" as common;
+
+$font-size: common.$default-size;
+
+.frame {
+  position: relative;
+  border-color: #f1f5f9;
+  background-color: #f8f8fa;
+
+  width: 246px;
+  border-right-width: 1px;
+  height: 100vh;
+  padding: 16px;
+
+  overflow: auto;
+
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .element {
+    margin-top: 16px;
+
+    .main {
+      opacity: 65%;
+      padding: 8px 12px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      .mainText {
+        font-size: $font-size;
+        color: #000000;
+      }
+    }
+
+    .mainActive {
+      font-weight: bold;
+      opacity: 100%;
+    }
+
+    .children {
+      padding: 4px 19px;
+
+      .elementChildren {
+        white-space: nowrap;
+        position: relative;
+        cursor: pointer;
+
+        border-left: 1px solid #7d7d7d4e;
+        padding: 4px 8px;
+
+        .childrenText {
+          padding: 4px 8px;
+          border-radius: 16px;
+          font-size: $font-size;
+
+          &:hover {
+            text-decoration: underline;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .active {
+        border-left: 1px solid common.$main-color;
+        color: common.$main-color;
+
+        font-weight: bold;
+
+        .childrenText {
+          text-decoration: none !important;
+          border: 1px solid #00000010;
+
+          padding-left: 16px;
+          background: white;
+        }
+      }
+    }
+  }
+
+  .bottomBar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 16px 0px;
+
+    .wrapper {
+      display: flex;
+      gap: 8px;
+      padding: 8px 24px;
+    }
+
+    .link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

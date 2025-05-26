@@ -1,0 +1,12 @@
+@use "../common/index.module.scss" as common;
+
+.description {
+  font-size: common.$small-size;
+  color: #9ca3af;
+}
+
+.lineClamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
