@@ -1,3 +1,9 @@
 [submodule "Ecomimac.-Woin-editor"]
 	path = Ecomimac.-Woin-editor
 	url = https://github.com/thwntn/Ecomimac.-Woin-editor.git
+[submodule "Ecomimac.-Front-end"]
+	path = Ecomimac.-Front-end
+	url = https://github.com/thwntn/Ecomimac.-Front-end.git
+[submodule "Ecomimac.-Back-end"]
+	path = Ecomimac.-Back-end
+	url = https://github.com/thwntn/Ecomimac.-Back-end.git
